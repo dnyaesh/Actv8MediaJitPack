@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/offer_dlg_bg"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="wrap_content"
+                android:background="@mipmap/ic_dlg_close"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@+id/ivClose"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:textSize="16dp"
+                    android:gravity="left"
+                    android:text="50% Off All Menu-Priced Pizzas at Pizza Hut"
+                    android:textColor="@color/dlg_title_clr"
+                    android:layout_height="wrap_content"/>
+
+            <Button
+                    android:id="@+id/btnBuyNow"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/tvTitle"
+                    android:text="@string/buy_now"
+                    android:textAllCaps="false"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/buy_now_btn_bg"
+                    android:layout_height="wrap_content"/>
+
+
+            <Button
+                    android:id="@+id/btnSaveToGpay"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/btnBuyNow"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="23dp"
+                    android:background="@mipmap/save_to_gpay"
+                    android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

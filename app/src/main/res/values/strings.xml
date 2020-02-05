@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">OneScreenJWApp</string>
+    <string name="save_offer_and_skip">Save Offer &amp; Skip</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="offer">Offer</string>
+    <string name="network_error">Network unavailable. Please try again later</string>
+    <string name="src_url_unavailable">Source url unavailable</string>
+    <string name="not_logged_in_msg">Sorry! You are not logged in</string>
+    <string name="invalid_jwt">Invalid JWT</string>
+    <string name="unknown_error">Error, please try again later</string>
+    <string name="something_went_wrong">Something wen\'t wrong, please try again later</string>
+    <string name="permission_denied">Oops..! One or more permission denied</string>
+    <string name="coupon_code">Coupon Code</string>
+    <string name="jw_key">UNOs0ZCHwiyouYntFxIk2Sziwpy68/NGE9GXEvjiz7VEaKcGA+xvKEu4rxfTv3rp</string>
+</resources>

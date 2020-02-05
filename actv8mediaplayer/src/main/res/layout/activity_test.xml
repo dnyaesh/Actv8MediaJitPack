@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+
+    <com.longtailvideo.jwplayer.JWPlayerView
+        android:id="@+id/jwplayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.longtailvideo.jwplayer.JWPlayerView>
+
+
+    <TextView
+        android:id="@+id/tvSaveAndSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/save_and_skip_bg"
+        android:letterSpacing="0.09"
+        android:padding="12dp"
+        android:text="@string/save_offer_and_skip"
+        android:textColor="@android:color/white"
+        android:textSize="14dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/rlProgress"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:background="@color/translucent_black"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/pbProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+</RelativeLayout>

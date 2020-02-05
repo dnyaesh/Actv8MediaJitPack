@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<string name="actv8_api_key">b207218a326cdec42d8739090dc80f4e270a53154</string>-->  <!--Production key-->
+    <!--<string name="actv8_api_key">da84e7b0445891cb7a16280e15c0c9e73df3424d</string> --> <!--Staging AND Development Key-->
+    <!--<string name="actv8_api_key">6a37a97c7c23b8d2344589428fe88aad7187f6d6</string>-->  <!--Staging, created by me-->
+    <!--<string name="actv8_api_key">38ec8c64c611412296f201ecf0b0b8bd1b51d651</string>-->  <!--Devpartners API Key-->
+    <string name="actv8_api_key">f7ac943287bb55d0c880e20f2053e80258485967</string>  <!--Devpartners API Key-->
+
+
+    <!--<string name="actv8_base_url">https://api-production-v4.actv8technologies.com/</string>-->
+    <!-- <string name="actv8_base_url">http://api-preprod-v4.actv8technologies.com/</string>-->
+    <!--<string name="actv8_base_url">http://api-staging-v4.actv8technologies.com/</string>-->
+
+    <!--<string name="actv8_base_url">http://api-development-v4.actv8technologies.com/</string>-->
+    <string name="actv8_base_url">https://api-devpartners-v4.actv8technologies.com/</string>
+
+
+    <!--<string name="actv8_user_data_base_url">https://v4.mobiimedia.com/</string>  &lt;!&ndash;Production User Data Url&ndash;&gt;-->
+    <!--<string name="actv8_user_data_base_url">http://mobiimedia.com-staging-v4.s3-website-us-east-1.amazonaws.com/</string>-->  <!--Staging User Data Url-->
+    <!--<string name="actv8_user_data_base_url">http://mobiimedia.com-development-v4.s3-website-us-east-1.amazonaws.com/</string>--> <!--Development User Data Url-->
+    <string name="actv8_user_data_base_url">google.com/</string> <!--Dev-Partner User Data Url-->
+
+
+    <!-- Time between detections in miliseconds -->
+    <integer name ="actv8_detection_delay">180000</integer>
+
+    <string name="actv8_bluetooth_api_key">LakLnzLKzhQigmuqgJkURAeEYcnrAlvg</string>
+    <string name="actv8_bluetooth_namespace">f7826da64fa24e988024</string>
+
+</resources>

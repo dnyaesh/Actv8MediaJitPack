@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.actv8.k2annex.actv8mediaplayer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="false"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".TestActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".WebViewActivity.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VideoActivity.VideoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".Services.UpdateDeviceService"
+            android:enabled="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+            android:value="com.actv8.k2annex.actv8mediaplayer.Providers.CastOptionsProvider" />
+        <meta-data
+            android:name="JW_LICENSE_KEY"
+            android:value="GhKZjrPnwRKo526eYh+GL4IF4b4ys4X+U1/HiltQX/WzOjAAm3NOV/oOSw2XWjDn" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
