@@ -9,10 +9,11 @@
     <application
         android:allowBackup="false"
         android:theme="@style/AppTheme">
+        <activity android:name=".ActivityWithoutJWPlayerView"></activity>
         <activity
             android:name=".TestActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".WebViewActivity.WebViewActivity"
             android:screenOrientation="portrait" />
