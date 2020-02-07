@@ -27,10 +27,7 @@ android {
 
 }
 
-task sourceJar(type: Jar) {
-    from android.sourceSets.main.java.srcDirs
-    classifier "sources"
-}
+
 
 /*publishing {
     publications {
@@ -78,5 +75,7 @@ dependencies {
     implementation(name: 'jwplayer-chromecast-3.10.0', ext: 'aar')*/
 
     //implementation 'com.github.dnyaesh:media_jitpack:1.0'
+
+
 
 }

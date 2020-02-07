@@ -38,10 +38,10 @@ dependencies {
 
     implementation 'bz.tsung.android:objectify:2.0'
     implementation 'com.google.android.gms:play-services-location:15.0.1'
-    //implementation project(":actv8mediaplayer")
+    implementation project(":actv8mediaplayer")
 
     implementation(name: 'actv8-core-sdk', ext: 'aar')
-    implementation(name: 'actv8_media_player', ext: 'aar')
+    //implementation(name: 'actv8_media_player', ext: 'aar')
 
     //implementation 'com.github.dnyaesh:jitpack_test_repo:1.0'
     //implementation(name: 'actv8mediaplayer-dbg', ext: 'aar')

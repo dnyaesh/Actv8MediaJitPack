@@ -41,7 +41,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
                 if(new MyNetworkManager(this).isNetworkAvailable())
                 {
-                    Intent videoIntent = new Intent(HomeActivity.this, VideoActivity.class);
+                    Intent videoIntent = new Intent(HomeActivity.this, TestActivity.class);
                     videoIntent.putExtra("VIDEO_URL", "http://pmd.cdn.turner.com/cnn/big/us/2019/10/29/jeanne-moos-military-dog-isis-raid-ebof-vpx.cnn_2861620_ios_5500.mp4");
                     startActivity(videoIntent);
                 }
