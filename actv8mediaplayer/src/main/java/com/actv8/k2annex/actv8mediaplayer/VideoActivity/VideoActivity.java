@@ -133,6 +133,34 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
         mPlayerView.addOnCompleteListener(this);
 
         Actv8MediaCoreLibrary.getInstance().getTimemarks();
+
+       /* List<AdBreak> adSchedule = new ArrayList<>();
+
+        AdBreak adBreak = new AdBreak.Builder()
+                //.tag(ApiConstants.VAST_TAG)
+                .offset("5")
+                .build();
+
+        adSchedule.add(adBreak);
+
+        Advertising advertising = new Advertising(AdSource.VAST, adSchedule);
+
+        PlaylistItem playlistItem = new PlaylistItem.Builder()
+                //.file("https://cdn.jwplayer.com/manifests/kQZvB6sI.m3u8")
+                .file(strVideoUrl)
+                .build();
+
+        List<PlaylistItem> playlist = new ArrayList<>();
+        playlist.add(playlistItem);
+
+        PlayerConfig config = new PlayerConfig.Builder()
+                .playlist(playlist)
+                .advertising(advertising)
+                .autostart(true)
+                .build();
+
+
+        mPlayerView.setup(config);*/
     }
 
     private void showSaveToWalletButton()
@@ -405,8 +433,15 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
         {
             if(new MyNetworkManager(this).isNetworkAvailable())
             {
-                rlProgress.setVisibility(View.VISIBLE);
-                Actv8MediaCoreLibrary.getInstance().createAndroidPass(""+detectedOffer.getId(), Actv8MediaCoreLibrary.getInstance().getCurrentUser().getPii().getUser_id());
+                if(Actv8MediaCoreLibrary.getInstance().getCurrentUser()!=null && Actv8MediaCoreLibrary.getInstance().getCurrentUser().getPii()!=null)
+                {
+                    rlProgress.setVisibility(View.VISIBLE);
+                    Actv8MediaCoreLibrary.getInstance().createAndroidPass(""+detectedOffer.getId(), Actv8MediaCoreLibrary.getInstance().getCurrentUser().getPii().getUser_id());
+                }
+                else
+                {
+                    Toast.makeText(this, getResources().getString(R.string.not_logged_in_msg), Toast.LENGTH_SHORT).show();
+                }
             }
             else
             {

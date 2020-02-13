@@ -5,7 +5,7 @@
     <string name="offer">Offer</string>
     <string name="network_error">Network unavailable. Please try again later</string>
     <string name="src_url_unavailable">Source url unavailable</string>
-    <string name="not_logged_in_msg">Sorry! You are not logged in</string>
+    <string name="not_logged_in_msg">Sorry! You are not logged in to Actv8</string>
     <string name="invalid_jwt">Invalid JWT</string>
     <string name="unknown_error">Error, please try again later</string>
     <string name="something_went_wrong">Something wen\'t wrong, please try again later</string>

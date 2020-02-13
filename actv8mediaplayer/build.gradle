@@ -23,28 +23,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
-
 }
 
-
-
-/*publishing {
-    publications {
-        bar(MavenPublication) {
-            groupId 'com.foo'
-            artifactId 'bar'
-            version '0.1'
-            artifact(sourceJar)
-            artifact("$buildDir/outputs/aar/bar-release.aar")
-        }
-    }
-    repositories {
-        maven {
-            url "$buildDir/repo"
-        }
-    }
-}*/
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -69,13 +49,4 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.3.1'
     implementation 'com.squareup.retrofit:retrofit:1.9.0'
     implementation 'com.google.android.material:material:1.0.0'
-    //implementation(name: 'actv8-audio-sdk', ext: 'aar')
-    /* implementation(name: 'jwplayer-core-3.10.0', ext: 'aar')
-    implementation(name: 'jwplayer-common-3.10.0', ext: 'aar')
-    implementation(name: 'jwplayer-chromecast-3.10.0', ext: 'aar')*/
-
-    //implementation 'com.github.dnyaesh:media_jitpack:1.0'
-
-
-
 }
